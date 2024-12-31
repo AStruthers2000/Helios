@@ -1,7 +1,7 @@
 # Helios: A New Game Plus Mod for Factorio
 
 ## Overview
-**Helios** is a comprehensive **New Game Plus (NG+)** mod for [Factorio](https://www.factorio.com/), designed to extend and expand upon the vanilla gameplay. 
+**Helios** is a comprehensive overhaul/expansion mod for [Factorio](https://www.factorio.com/), designed to extend and expand upon the vanilla gameplay. 
 
 ---
 
