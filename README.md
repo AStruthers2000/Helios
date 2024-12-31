@@ -1,4 +1,4 @@
-# Helios: A New Game Plus Mod for Factorio
+# Helios: An Overhaul for Factorio
 
 ## Overview
 **Helios** is a comprehensive overhaul/expansion mod for [Factorio](https://www.factorio.com/), designed to extend and expand upon the vanilla gameplay. 
