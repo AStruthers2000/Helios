@@ -1,0 +1,11 @@
+{
+  "recipe": [
+    ["assembly-component-craft", "assembly-component"]
+  ],
+  "item": [
+    ["spring", "spring-item"]
+  ],
+  "entity": [
+    ["spring", "spring-item"]
+  ]
+}
