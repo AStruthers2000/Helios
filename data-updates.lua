@@ -29,3 +29,5 @@ improvedAutomation.results = {
 improvedAutomation.show_amount_in_title = false
 
 data:extend({improvedAutomation})
+
+require("prototypes.electronics.data-updates")

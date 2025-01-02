@@ -20,4 +20,22 @@
         },
         energy_required = 0.5
     },
+    {
+        type = "recipe",
+        name = "resistor",
+        category = "electronics",
+        icon = "__helios__/graphics/icons/mipped/electronic/part-electronic-resistor-1.png",
+        icon_size = 64,
+        enabled = false,
+        allow_productivity = true,
+        ingredients = {
+            { type = "item", name = "copper-cable", amount = 2},
+            { type = "item", name = "carbon", amount = 1},
+            { type = "item", name = "iron-stick", amount = 1}
+        },
+        results = {
+            {type = "item", name = "resistor", amount = 1}
+        },
+        energy_required = 1
+    }
 })

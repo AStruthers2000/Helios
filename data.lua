@@ -12,3 +12,4 @@ require("prototypes.electronics.recipes")
 require("prototypes.entities")
 
 require("prototypes.technologies")
+require("prototypes.electronics.technologies")

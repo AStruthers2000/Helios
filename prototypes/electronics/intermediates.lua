@@ -17,7 +17,7 @@ data:extend({
     {
         type = "item",
         name = "resistor",
-        icon = "__helios__/graphics/icons/mipped/electronic/part-electronic-resistor.png",
+        icon = "__helios__/graphics/icons/mipped/electronic/part-electronic-resistor-1.png",
         icon_size = 64,
         inventory_move_sound = item_sounds.wire_inventory_move,
         pick_sound = item_sounds.wire_inventory_pickup,
@@ -30,7 +30,7 @@ data:extend({
     {
         type = "item",
         name = "capacitor",
-        icon = "__helios__/graphics/icons/mipped/electronic/part-electronic-capacitor.png",
+        icon = "__helios__/graphics/icons/mipped/electronic/part-electronic-capacitor-1.png",
         icon_size = 64,
         inventory_move_sound = item_sounds.wire_inventory_move,
         pick_sound = item_sounds.wire_inventory_pickup,
