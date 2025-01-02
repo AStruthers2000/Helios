@@ -18,6 +18,7 @@
         },
         order = "a-m"
     },
+    --[[
     {
         type = "technology",
         name = "improved-automation-science-tech",
@@ -35,5 +36,7 @@
         effects = {
             { type = "unlock-recipe", recipe = "improved-automation-science" },
         },
-    }
+    },]]--
 })
+
+

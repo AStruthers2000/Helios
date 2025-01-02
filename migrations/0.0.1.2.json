@@ -1,0 +1,12 @@
+{
+  "recipe": [
+    ["assembly-component-craft", "assembly-component"],
+    ["improved-automation-science", "automation-science-pack"]
+  ],
+  "item": [
+    ["spring", "spring-item"]
+  ],
+  "entity": [
+    ["spring", "spring-item"]
+  ]
+}
