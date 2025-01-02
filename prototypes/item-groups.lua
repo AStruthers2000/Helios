@@ -13,5 +13,11 @@
         --group = "intermediate-products",
         group = "helios",
         order = "v",
+    },
+    {
+        type = "item-subgroup",
+        name = "helios-electronics",
+        group = "helios",
+        order = "e"
     }
 }
