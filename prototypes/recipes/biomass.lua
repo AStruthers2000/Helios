@@ -1,4 +1,5 @@
-﻿data:extend({
+﻿--[[
+data:extend({
     {
         type = "recipe",
         name = "biomass-from-sap",
@@ -17,5 +18,28 @@
         },
         energy_required = 60,
         main_product = "biomass",
+    }
+})
+]]--
+
+data:extend({
+    {
+        type = "recipe",
+        name = "biomass",
+        category = "composting",
+        enabled = false,
+        allow_productivity = true,
+        auto_recycle = false,
+        allow_decomposition = false,
+        ingredients = {
+            {type = "item", name = "wood", amount = 10},
+            {type = "fluid", name = "steam", amount = 100}
+        },
+        results = {
+            {type = "item", name = "biomass", amount = 5},
+            {type = "item", name = "sap", amount = 5}
+        },
+        energy_required = 60,
+        main_product = "biomass"
     }
 })

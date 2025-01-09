@@ -13,6 +13,6 @@
     },
     {
         type = "recipe-category",
-        name = "bioprocessing"
+        name = "composting"
     }
 }

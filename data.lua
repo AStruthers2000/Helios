@@ -23,10 +23,17 @@ require("prototypes.resources.clay")
 
 require("prototypes.items.clay")
 require("prototypes.items.biomass")
+require("prototypes.items.glass")
+require("prototypes.items.tin")
 
 require("prototypes.recipes.clay")
 require("prototypes.recipes.biomass")
+require("prototypes.recipes.glass")
+require("prototypes.recipes.tin")
 
 require("prototypes.buildings.clay-pit")
+require("prototypes.buildings.compost-bin")
 
 require("prototypes.technology.agriculture")
+require("prototypes.technology.glassworks")
+require("prototypes.technology.metalworking")

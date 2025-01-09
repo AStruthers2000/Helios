@@ -25,4 +25,25 @@
             time = 60
         }
     },
+    {
+        type = "technology",
+        name = "compost-bin",
+        icon = "__Krastorio2Assets__/technologies/greenhouse.png",
+        icon_size = 256,
+        effects = {
+            {
+                type = "unlock-recipe",
+                recipe = "compost-bin"
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "biomass"
+            }
+        },
+        prerequisites = {},
+        research_trigger = {
+            type = "craft-item",
+            item = "biomass"
+        }
+    }
 })
