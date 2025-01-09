@@ -45,3 +45,19 @@ data.raw.technology["agriculture"].effects = {
 --data.raw.technology["agriculture"].icon_size = 64
 
 data.raw.technology["fish-breeding"].prerequisites = {"agricultural-science-pack"}
+
+for _, tree in pairs(data.raw["tree"]) do
+    if tree.minable and tree.minable.result == "wood" then
+        tree.minable.results = {
+            {type = "item", name = tree.minable.result, amount = tree.minable.count},
+            {type = "item", name = "sap", probability = 0.5, amount_min = 1, amount_max = 4}
+        }
+        tree.minable.result = nil
+    end
+end
+
+local bioprocessingMachines = {"biochamber", "chemical-plant", "assembling-machine-1", "assembling-machine-2", "assembling-machine-3"}
+for _, machine in pairs(bioprocessingMachines) do
+    table.insert(data.raw["assembling-machine"][machine].crafting_categories, "bioprocessing")
+end
+table.insert(data.raw["character"]["character"].crafting_categories, "bioprocessing")

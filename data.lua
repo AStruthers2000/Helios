@@ -22,8 +22,10 @@ require("prototypes.resources.lead")
 require("prototypes.resources.clay")
 
 require("prototypes.items.clay")
+require("prototypes.items.biomass")
 
 require("prototypes.recipes.clay")
+require("prototypes.recipes.biomass")
 
 require("prototypes.buildings.clay-pit")
 
