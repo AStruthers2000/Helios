@@ -30,7 +30,7 @@
         results = {
             { type = "item", name = "tin-plate", amount = 1 },
         },
-        energy_required = 1,
+        energy_required = 3.2,
         main_product = "tin-plate"
     },
     {
@@ -47,14 +47,14 @@
         results = {
             { type = "item", name = "tin-plate", amount = 1 },
         },
-        energy_required = 1,
+        energy_required = 3.2,
         main_product = "tin-plate"
     },
     {
         type = "recipe",
         name = "tin-gear-wheel",
         category = "crafting",
-        enabled = false,
+        enabled = true,
         allow_productivity = true,
         auto_recycle = false,
         allow_decomposition = true,
@@ -64,14 +64,14 @@
         results = {
             { type = "item", name = "tin-gear-wheel", amount = 1 },
         },
-        energy_required = 1,
+        energy_required = 0.5,
         main_product = "tin-gear-wheel"
     },
     {
         type = "recipe",
         name = "gear-wheel-assembly",
         category = "crafting",
-        enabled = false,
+        enabled = true,
         allow_productivity = true,
         auto_recycle = false,
         allow_decomposition = true,

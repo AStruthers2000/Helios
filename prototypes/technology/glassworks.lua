@@ -13,7 +13,8 @@
         prerequisites = {},
         research_trigger = {
             type = "craft-item",
-            item = "glass"
+            item = "glass",
+            count = 2
         }
     }
 })

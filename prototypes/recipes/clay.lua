@@ -12,27 +12,27 @@
         auto_recycle = false,
         allow_decomposition = false,
         ingredients = {
-            { type = "item",  name = "stone", amount = 5 },
-            { type = "fluid", name = "steam", amount = 100 }
+            { type = "item",  name = "stone", amount = 1 },
+            { type = "fluid", name = "steam", amount = 50 }
         },
         results = {
             { type = "item", name = "clay", amount = 1 }
         },
-        energy_required = 1,
+        energy_required = 0.5,
         main_product = "clay",
     },
     {
         type = "recipe",
         name = "clay-brick",
-        category = "crafting",
+        category = "smelting",
         --icon = "__helios__/graphics/icons/items/clay-brick.png",
         --icon_size = 32,
-        enabled = true,
+        enabled = false,
         allow_productivity = true,
         auto_recycle = false,
         allow_decomposition = true,
         ingredients = {
-            { type = "item", name = "clay", amount = 5 },
+            { type = "item", name = "clay", amount = 2 },
         },
         results = {
             { type = "item", name = "clay-brick", amount = 1 }
@@ -45,8 +45,8 @@
         name = "ceramic-casing",
         category = "crafting",
         icon = "__helios__/graphics/icons/items/ceramic.png",
-        icon_size = 32,
-        enabled = true,
+        icon_size = 64,
+        enabled = false,
         allow_productivity = true,
         auto_recycle = false,
         allow_decomposition = true,

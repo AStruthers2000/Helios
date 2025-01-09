@@ -1,4 +1,6 @@
-﻿data:extend({
+﻿local item_sounds = require("__base__.prototypes.item_sounds")
+
+data:extend({
     {
         type = "item",
         name = "crushed-tin",
@@ -31,6 +33,11 @@
     {
         type = "item",
         name = "tin-plate",
+        subgroup = "raw-material",
+        order = "a[smelting]-a[tin-plate]",
+        inventory_move_sound = item_sounds.metal_small_inventory_move,
+        pick_sound = item_sounds.metal_small_inventory_pickup,
+        drop_sound = item_sounds.metal_small_inventory_move,
         icon = "__helios__/graphics/icons/items/tin/tin-plate.png",
         icon_size = 32,
         stack_size = 100,
@@ -39,6 +46,11 @@
     {
         type = "item",
         name = "tin-gear-wheel",
+        subgroup = "intermediate-product",
+        order = "a[basic-intermediates]-a[tin-gear-wheel]",
+        inventory_move_sound = item_sounds.metal_small_inventory_move,
+        pick_sound = item_sounds.metal_small_inventory_pickup,
+        drop_sound = item_sounds.metal_small_inventory_move,
         icon = "__helios__/graphics/icons/items/part-metal-tin-gear-1.png",
         icon_size = 64,
         stack_size = 100,
@@ -47,6 +59,11 @@
     {
         type = "item",
         name = "gear-wheel-assembly",
+        subgroup = "intermediate-product",
+        order = "a[basic-intermediates]-b[gear-wheel-assembly]",
+        inventory_move_sound = item_sounds.metal_small_inventory_move,
+        pick_sound = item_sounds.metal_small_inventory_pickup,
+        drop_sound = item_sounds.metal_small_inventory_move,
         icon = "__helios__/graphics/icons/items/part-metal-gear-assembly.png",
         icon_size = 64,
         stack_size = 100,

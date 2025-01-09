@@ -38,13 +38,13 @@ data:extend({
         subgroup = "raw-resource",
         map_color = {r = 0.258, g = 0.180, b = 0.807},
         minable = {
-            mining_time = 2,
+            mining_time = 1,
             mining_particle = "stone-particle",
             results = {
                 { type = "item", name = "tin-ore", amount = 1 }
             },
-            fluid_amount = 100,
-            required_fluid = "steam"
+            --fluid_amount = 100,
+            --required_fluid = "steam"
         },
         collision_box = { { -0.1, -0.1 }, { 0.1, 0.1 } },
         selection_box = { { -0.5, -0.5 }, { 0.5, 0.5 } },

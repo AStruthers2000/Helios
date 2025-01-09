@@ -37,3 +37,7 @@ require("prototypes.buildings.compost-bin")
 require("prototypes.technology.agriculture")
 require("prototypes.technology.glassworks")
 require("prototypes.technology.metalworking")
+require("prototypes.technology.ceramics")
+require("prototypes.technology.circuitry")
+
+require("prototypes.updates.base-plates")

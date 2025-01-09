@@ -30,7 +30,7 @@
         results = {
             { type = "item", name = "glass", amount = 1 },
         },
-        energy_required = 1,
+        energy_required = 3.2,
         main_product = "glass"
     },
     {
@@ -47,7 +47,7 @@
         results = {
             { type = "item", name = "glass", amount = 1 },
         },
-        energy_required = 1,
+        energy_required = 3.2,
         main_product = "glass"
     },
     {

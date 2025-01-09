@@ -40,7 +40,7 @@
                 recipe = "biomass"
             }
         },
-        prerequisites = {},
+        prerequisites = {"ceramics"},
         research_trigger = {
             type = "craft-item",
             item = "biomass"

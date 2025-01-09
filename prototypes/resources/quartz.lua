@@ -42,7 +42,7 @@ data:extend({
         map_color = { r = 0.670, g = 0.792, b = 0.913 },
         minable = {
             -- mining_particle = "quartz-ore-particle",
-            mining_time = 2,
+            mining_time = 1,
             mining_particle = "stone-particle",
             results = {
                 { type = "item", name = "quartz-ore", amount = 1 }

@@ -6,7 +6,7 @@ data:extend({
         type = "recipe",
         name = "clay-pit",
         energy_required = 5,
-        enabled = true,
+        enabled = false,
         ingredients = {
             { type = "item", name = "burner-mining-drill", amount = 2 },
             { type = "item", name = "pipe",                amount = 10 },

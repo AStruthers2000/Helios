@@ -1,4 +1,6 @@
-﻿data:extend({
+﻿local item_sounds = require("__base__.prototypes.item_sounds")
+
+data:extend({
     {
         type = "item",
         name = "crushed-quartz",
@@ -31,6 +33,11 @@
     {
         type = "item",
         name = "glass",
+        subgroup = "raw-material",
+        order = "a[smelting]-b[glass-plate]",
+        inventory_move_sound = item_sounds.metal_small_inventory_move,
+        pick_sound = item_sounds.metal_small_inventory_pickup,
+        drop_sound = item_sounds.metal_small_inventory_move,
         icon = "__helios__/graphics/icons/items/quartz/part-glass-panes-low-1.png",
         icon_size = 64,
         pictures = {
@@ -44,6 +51,11 @@
     {
         type = "item",
         name = "glass-bottle",
+        subgroup = "science-pack",
+        order = "aaaa[intermediate]-aaaaa[glass-bottle]",
+        inventory_move_sound = item_sounds.science_inventory_move,
+        pick_sound = item_sounds.science_inventory_pickup,
+        drop_sound = item_sounds.science_inventory_move,
         icon = "__helios__/graphics/icons/items/generic-bottle-1.png",
         icon_size = 1024,
         stack_size = 50,

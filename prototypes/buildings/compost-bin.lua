@@ -28,7 +28,7 @@ data:extend({
     name = "compost-bin",
     icon = "__Krastorio2Assets__/icons/entities/greenhouse.png",
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
-    minable = { hardness = 1, mining_time = 1, result = "compost-bin" },
+    minable = { mining_time = 0.5, result = "compost-bin" },
     collision_box = { { -3.25, -3.25 }, { 3.25, 3.25 } },
     selection_box = { { -3.5, -3.5 }, { 3.5, 3.5 } },
     fast_replaceable_group = "compost-bin",

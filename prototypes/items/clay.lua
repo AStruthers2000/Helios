@@ -48,7 +48,7 @@ data:extend({
         type = "item",
         name = "ceramic-casing",
         icon = "__helios__/graphics/icons/items/ceramic.png",
-        icon_size = 32,
+        icon_size = 64,
         subgroup = "intermediate-product",
         order = "h[ceramic]-c",
         inventory_move_sound = item_sounds.brick_inventory_move,
