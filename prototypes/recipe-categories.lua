@@ -6,5 +6,9 @@
     {
         type = "recipe-category",
         name = "helios-electronics"
+    },
+    {
+        type = "recipe-category",
+        name = "clay"
     }
 }

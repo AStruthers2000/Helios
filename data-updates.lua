@@ -2,6 +2,7 @@
 --table.insert(foundryTech, { type = "unlock-recipe", recipe = "casting-spring"})
 --data.raw["technology"]["foundry"] = foundryTech
 
+--[[
 local foundryTech = data.raw.technology["foundry"]
 if not foundryTech then
     error("Technology " .. "foundry" .. " does not exist.")
@@ -31,3 +32,16 @@ improvedAutomation.show_amount_in_title = false
 data:extend({improvedAutomation})
 
 require("prototypes.electronics.data-updates")
+]]--
+
+
+data.raw.technology["agriculture"].effects = {
+    {
+        type = "unlock-recipe",
+        recipe = "nutrients-from-spoilage"
+    }
+}
+--data.raw.technology["agriculture"].icon = "__space-age__/graphics/icons/nutrients-from-spoilage.png"
+--data.raw.technology["agriculture"].icon_size = 64
+
+data.raw.technology["fish-breeding"].prerequisites = {"agricultural-science-pack"}
