@@ -50,8 +50,8 @@ script.on_event(defines.events.on_player_created, function(event)
     local inventory = character.get_main_inventory();
 
     inventory.clear()
-    inventory.insert{name = "burner-mining-drill", count = 50}
-    inventory.insert{name = "stone-furnace", count = 50}
+    inventory.insert{name = "burner-mining-drill", count = 20}
+    inventory.insert{name = "stone-furnace", count = 20}
     inventory.insert{name = "gun-turret", count = 10}
     inventory.insert{name = "firearm-magazine", count = 200}
     inventory.insert{name = "wood", count = 1}

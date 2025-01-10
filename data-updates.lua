@@ -47,7 +47,7 @@ data.raw.technology["agriculture"].effects = {
 data.raw.technology["fish-breeding"].prerequisites = {"agricultural-science-pack"}
 
 for _, tree in pairs(data.raw["tree"]) do
-    if tree.minable and tree.minable.result == "wood" then
+    if tree.minable and tree.minable.result == "wood" and tree.minable.count == 4 then
         tree.minable.results = {
             {type = "item", name = tree.minable.result, amount = tree.minable.count},
             {type = "item", name = "sap", probability = 0.5, amount_min = 1, amount_max = 4}
