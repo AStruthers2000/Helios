@@ -2,6 +2,7 @@
 
 -- Deepcopy the steel furnace to use as a base
 local chemical_furnace_entity = util.table.deepcopy(data.raw.furnace["steel-furnace"])
+chemical_furnace_entity.type = "assembling-machine"
 
 local furnacepipepictures = {
   north = {
@@ -38,66 +39,133 @@ local furnacepipepictures = {
   }
 }
 
+-- Deepcopy the chemical plant to use as a base
+local chemical_smelter_entity = util.table.deepcopy(data.raw["assembling-machine"]["chemical-plant"])
+
 -- Update entity properties
-chemical_furnace_entity.name = "chemical-furnace"
-chemical_furnace_entity.icon = "__base__/graphics/icons/steel-furnace.png" -- Replace with your icon
-chemical_furnace_entity.icon_size = 64
-chemical_furnace_entity.minable.result = "chemical-furnace"
-chemical_furnace_entity.crafting_categories = {"smelting", "chemistry"}
-chemical_furnace_entity.fluid_boxes = {
+chemical_smelter_entity.name = "chemical-smelter"
+chemical_smelter_entity.icon = "__helios__/graphics/icons/pchamber1.png" -- Replace with your custom icon
+chemical_smelter_entity.icon_size = 64
+chemical_smelter_entity.minable.result = "chemical-smelter"
+chemical_smelter_entity.crafting_categories = {"chemical-smelting"}
+
+
+-- Keep the 3x3 size
+chemical_smelter_entity.collision_box = {{-1.2, -1.2}, {1.2, 1.2}}
+chemical_smelter_entity.selection_box = {{-1.5, -1.5}, {1.5, 1.5}}
+chemical_smelter_entity.drawing_box = {{-1.5, -1.5}, {1.5, 1.5}}
+chemical_smelter_entity.forced_symmetry = "diagonal-pos"
+
+chemical_smelter_entity.fluid_boxes_off_when_no_fluid_recipe = true
+chemical_smelter_entity.fluid_boxes = {
+    {
+        production_type = "output",
+        base_area = 1,
+        pipe_picture = furnacepipepictures,
+        pipe_covers = pipecoverspictures(),
+        volume = 1000,
+        pipe_connections = {
+            {
+                flow_direction = "output",
+                direction = defines.direction.south,
+                position = { 0, 0.9 }
+            },
+        },
+    },
+    {
+        production_type = "output",
+        base_area = 1,
+        pipe_picture = furnacepipepictures,
+        pipe_covers = pipecoverspictures(),
+        volume = 1000,
+        pipe_connections = {
+            {
+                flow_direction = "output",
+                direction = defines.direction.north,
+                position = { 0, -0.9 }
+            },
+        },
+    },
     {
         production_type = "input",
-        --base_area = 1,
-        pipe_picture = furnacepipepictures, -- Replace with your pipe visuals
+        base_area = 1,
+        pipe_picture = furnacepipepictures,
         pipe_covers = pipecoverspictures(),
         volume = 1000,
         pipe_connections = {
             {
                 flow_direction = "input",
-                direction = defines.direction.south,
-                position = { 0.5, 0.5 }
+                direction = defines.direction.west,
+                position = { -0.9, 0 }
+            },
+        },
+
+    },
+    {
+        production_type = "input",
+        base_area = 1,
+        pipe_picture = furnacepipepictures,
+        pipe_covers = pipecoverspictures(),
+        volume = 1000,
+        pipe_connections = {
+            {
+                flow_direction = "input",
+                direction = defines.direction.east,
+                position = { 0.9, 0 }
+            },
+        }
+    }
+}
+-- Define custom animation using the sprite sheet
+chemical_smelter_entity.graphics_set = {
+    animation = {
+        layers = {
+            {
+                filename = "__helios__/graphics/entity/pchamber1.png", -- Replace with your mod folder path
+                width = 384,                                           -- 3072 / 8 (columns)
+                height = 384,                                          -- 3072 / 8 (rows)
+                frame_count = 64,
+                line_length = 8,                                       -- Number of columns
+                animation_speed = 1,                                   -- Adjust speed as needed
+                shift = util.by_pixel(5, 0),                           -- Adjust for proper alignment
+                scale = 0.25,                                           -- Downscales the large texture to fit the 3x3 size
             }
-        },
-        secondary_draw_orders = {
-            north = -16,
-            east = -1,
-            west = -1,
-            south = 1,
-        },
+        }
     }
 }
 
-
-
--- Define the item for the chemical furnace
-local chemical_furnace_item = {
+-- Define the item for the chemical smelter
+local chemical_smelter_item = {
     type = "item",
-    name = "chemical-furnace",
-    icon = "__base__/graphics/icons/steel-furnace.png", -- Replace with your icon
+    name = "chemical-smelter",
+    icon = "__helios__/graphics/icons/pchamber1.png", -- Replace with your custom icon
     icon_size = 64,
-    subgroup = "smelting-machine",
-    order = "b[chemical-furnace]",
-    place_result = "chemical-furnace",
+    subgroup = "production-machine",
+    order = "b[chemical-smelter]",
+    place_result = "chemical-smelter",
     stack_size = 50
 }
 
--- Define the recipe for the chemical furnace
-local chemical_furnace_recipe = {
+-- Define the recipe for the chemical smelter
+local chemical_smelter_recipe = {
     type = "recipe",
-    name = "chemical-furnace",
+    name = "chemical-smelter",
     ingredients = {
-        { type = "item", name = "steel-furnace", amount = 1 },
-        { type = "item", name = "pipe",          amount = 4 }
+        { type = "item", name = "chemical-plant",   amount = 1 },
+        { type = "item", name = "advanced-circuit", amount = 10 },
+        { type = "item", name = "steel-plate",      amount = 15 }
     },
-    results = { { type = "item", name = "chemical-furnace", amount = 1 } },
+    results = {
+        { type = "item", name = "chemical-smelter", amount = 1 }
+    },
     enabled = false
 }
 
--- Add to technology
-table.insert(data.raw.technology["fluid-handling"].effects, {
+-- Add the recipe to a custom technology
+table.insert(data.raw.technology["advanced-material-processing-2"].effects, {
     type = "unlock-recipe",
-    recipe = "chemical-furnace"
+    recipe = "chemical-smelter"
 })
 
 -- Extend all definitions into the game
-data:extend({chemical_furnace_entity, chemical_furnace_item, chemical_furnace_recipe})
+data:extend({chemical_smelter_entity, chemical_smelter_item, chemical_smelter_recipe})

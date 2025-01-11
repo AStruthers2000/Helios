@@ -6,5 +6,9 @@
     {
         type = "recipe-category",
         name = "composting"
+    },
+    {
+        type = "recipe-category",
+        name = "chemical-smelting"
     }
 })

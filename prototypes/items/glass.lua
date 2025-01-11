@@ -69,7 +69,7 @@ data:extend({
         inventory_move_sound = item_sounds.metal_small_inventory_move,
         pick_sound = item_sounds.metal_small_inventory_pickup,
         drop_sound = item_sounds.metal_small_inventory_move,
-        icon = "__helios__/graphics/icons/items/part-glass-panes-10.png",
+        icon = "__helios__/graphics/icons/items/tempered-glass.png",
         icon_size = 64,
         stack_size = 200,
         weight = 2 * kg,

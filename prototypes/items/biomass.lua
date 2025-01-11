@@ -59,4 +59,22 @@ data:extend({
         stack_size = 100,
         weight = 2 * kg,
     },
+    {
+        type = "item",
+        name = "raw-latex",
+        subgroup = "raw-material",
+        order = "b[chemistry]-p[latex]",
+        inventory_move_sound = space_age_item_sounds.agriculture_inventory_move,
+        pick_sound = space_age_item_sounds.agriculture_inventory_pickup,
+        drop_sound = space_age_item_sounds.agriculture_inventory_move,
+        icon = "__helios__/graphics/icons/resources/material-latex-1.png",
+        icon_size = 64,
+        pictures = {
+            { size = 64, filename = "__helios__/graphics/icons/resources/material-latex-1.png" },
+            { size = 64, filename = "__helios__/graphics/icons/resources/material-latex-2.png" },
+            { size = 64, filename = "__helios__/graphics/icons/resources/material-latex-3.png" },
+        },
+        stack_size = 100,
+        weight = 2 * kg,
+    },
 })
