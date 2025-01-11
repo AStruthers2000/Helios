@@ -8,7 +8,7 @@ clayBrick.icons = {
     {
         icon = "__helios__/graphics/icons/items/clay-brick.png",
         icon_size = 32,
-        --tint = { r = 125 / 255, g = 71 / 255, b = 49 / 255, a = 1 },
+        tint = { r = 125 / 255, g = 71 / 255, b = 49 / 255, a = 1 },
     }
 }
 clayBrick.place_as_tile = nil

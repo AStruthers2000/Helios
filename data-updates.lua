@@ -62,4 +62,6 @@ for _, machine in pairs(bioprocessingMachines) do
 end
 --table.insert(data.raw["character"]["character"].crafting_categories, "bioprocessing")
 
+data.raw.character.character.crafting_categories = {"crafting", "pressing", "recycling-or-hand-crafting", "organic-or-hand-crafting", "organic-or-assembling"}
+
 

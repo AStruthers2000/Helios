@@ -9,6 +9,8 @@
     "base>=2.0", 
     "space-age>=2.0",
     "flib >= 0.15.0",
-    "Krastorio2Assets >= 2.0.0"
+    "Krastorio2Assets >= 2.0.0",
+    "Flare Stack",
+    "!Electric Furnaces"
   ]
 }

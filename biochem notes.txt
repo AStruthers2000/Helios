@@ -1,0 +1,11 @@
+chemical plant: rubber + wastewater -> fluid latex + acetic acid + water
+chemical plant: fluid latex -> raw latex + steam
+chemical plant: acetic acid -> ethanol + oxygen
+chemical plant: ethanol + carbon dioxide -> biomass + water + oxygen
+chemical plant: biomass -> ethanol + carbon dioxide (feedback loop for more biomass, post blue-science recipe)
+chemical plant: oxygen + hydrogen -> water + electricity
+chemical plant: oxygen -> air capture device (like from krastorio)
+
+
+bad rubber:
+furnace: rubber -> raw latex + steam + stone

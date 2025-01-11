@@ -24,6 +24,9 @@ data:extend({
         name = "biomass",
         icon = "__helios__/graphics/icons/items/material-cube-biomass-1.png",
         icon_size = 64,
+        inventory_move_sound = space_age_item_sounds.agriculture_inventory_move,
+        pick_sound = space_age_item_sounds.agriculture_inventory_pickup,
+        drop_sound = space_age_item_sounds.agriculture_inventory_move,
         pictures = {
             { size = 64, filename = "__helios__/graphics/icons/items/material-cube-biomass-1.png", scale = 0.66 },
             { size = 64, filename = "__helios__/graphics/icons/items/material-cube-biomass-2.png", scale = 0.66 },
@@ -37,5 +40,23 @@ data:extend({
         default_import_loation = "nauvis",
         spoil_ticks = 2 * hour,
         spoil_result = "spoilage",
-    }
+    },
+    {
+        type = "item",
+        name = "resin",
+        subgroup = "intermediate-product",
+        order = "e[electronic]-a[resin]",
+        inventory_move_sound = space_age_item_sounds.agriculture_inventory_move,
+        pick_sound = space_age_item_sounds.agriculture_inventory_pickup,
+        drop_sound = space_age_item_sounds.agriculture_inventory_move,
+        icon = "__helios__/graphics/icons/items/material-blob-resin-1.png",
+        icon_size = 64,
+        pictures = {
+            { size = 64, filename = "__helios__/graphics/icons/items/material-blob-resin-1.png" },
+            { size = 64, filename = "__helios__/graphics/icons/items/material-blob-resin-2.png" },
+            { size = 64, filename = "__helios__/graphics/icons/items/material-blob-resin-3.png" },
+        },
+        stack_size = 100,
+        weight = 2 * kg,
+    },
 })

@@ -1,9 +1,0 @@
-circuits:
-copper wire, gold, diamond, microchip, substrate -> green circuit
-
-gold from asteroids or from recycling on fulgora
-
-diamond from asteroids or from rain capture/dredging on aquilo
-
-microchip from silicon, transistor, iron plate, plastic
-

@@ -1,0 +1,9 @@
+﻿1) replace clay-pit graphics/size with the electric grinder thing from factorio+
+2) use the newly freed flare stack (formerly the clay pit) as an "air generator" like the atmospheric condenser from krastorio
+3) consider buildings like the filtration-plant, electrolysis-plant, advanced-furnace, advanced-chemical-plant from krastorio
+4) buildings to take:
+    (a) heat interchange furnace
+    (b) electric foundry
+    (c) steel forge
+    (d) compressor
+    (e) high-powered machine press
