@@ -66,6 +66,7 @@ data.raw.character.character.crafting_categories = {"crafting", "pressing", "rec
 
 --table.insert(data.raw.plant["tree-plant"].minable.results, {type = "item", name = "sap", probability = 0.5, amount_min = 1, amount_max = 4})
 
+
 --literally copying the properties from space-age/prototypes/entities/plants, but copying tree-01 instead of tree-08
 local util = require('util')
 

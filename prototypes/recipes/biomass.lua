@@ -126,8 +126,26 @@ data:extend({
         main_product = "rubber-tree-seed",
         crafting_machine_tint =
         {
-            primary = { r = 0.442, g = 0.205, b = 0.090, a = 1.000 }, -- #703416ff
+            primary = { r = 0.442, g = 0.205, b = 0.090, a = 1.000 },   -- #703416ff
             secondary = { r = 1.000, g = 0.500, b = 0.000, a = 1.000 }, -- #ff7f00ff
         }
+    },
+    {
+        type = "recipe",
+        name = "sap-compression",
+        category = "composting",
+        subgroup = "nauvis-agriculture",
+        order = "b[nauvis-agriculture]-a[wood-processing]",
+        enabled = false,
+        allow_productivity = true,
+        auto_recycle = false,
+        allow_decomposition = false,
+        energy_required = 10,
+        ingredients = { { type = "item", name = "sap", amount = 20 } },
+        results =
+        {
+            { type = "item", name = "raw-latex", amount = 1 },
+        },
+        main_product = "raw-latex",
     }
 })

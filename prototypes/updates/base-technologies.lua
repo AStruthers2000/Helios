@@ -9,6 +9,26 @@ table.insert(data.raw.technology["logistic-science-pack"].prerequisites, "electr
 data.raw.technology["electronics"].effects = {
     {
         type = "unlock-recipe",
+        recipe = "printed-circuit-substrate-1"
+    },
+    {
+        type = "unlock-recipe",
+        recipe = "insulated-copper-cable"
+    },
+    {
+        type = "unlock-recipe",
+        recipe = "inductor"
+    },
+    {
+        type = "unlock-recipe",
+        recipe = "copper-coil"
+    },
+    {
+        type = "unlock-recipe",
+        recipe = "solder"
+    },
+    {
+        type = "unlock-recipe",
         recipe = "electronic-circuit"
     },
     {

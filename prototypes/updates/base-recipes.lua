@@ -39,3 +39,11 @@ data.raw.recipe["lab"].ingredients = {
 
 data.raw.recipe["iron-plate"] = nil
 data.raw.recipe["copper-plate"] = nil
+
+data.raw.recipe["electronic-circuit"].ingredients = {
+    { type = "item", name = "printed-circuit-substrate-1", amount = 1 },
+    { type = "item", name = "insulated-copper-cable",      amount = 3 },
+    { type = "item", name = "inductor",                    amount = 2 },
+    { type = "item", name = "copper-coil",                 amount = 1 },
+    { type = "item", name = "solder",                      amount = 2 }
+}

@@ -46,12 +46,17 @@
             {
                 type = "unlock-recipe",
                 recipe = "biomass"
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "sap-compression"
             }
         },
         prerequisites = {"ceramics"},
         research_trigger = {
             type = "craft-item",
-            item = "biomass"
+            item = "biomass",
+            count = 5
         }
     }
 })
