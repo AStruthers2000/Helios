@@ -13,6 +13,9 @@ require("prototypes.items.tin")
 require("prototypes.items.lead")
 require("prototypes.items.chemical")
 require("prototypes.items.electronics")
+require("prototypes.items.steel")
+require("prototypes.items.mechanical-components")
+
 
 require("prototypes.recipes.clay")
 require("prototypes.recipes.biomass")
@@ -20,8 +23,9 @@ require("prototypes.recipes.glass")
 require("prototypes.recipes.tin")
 require("prototypes.recipes.electronics")
 require("prototypes.recipes.chemical")
+require("prototypes.recipes.mechanical-components")
 
-require("prototypes.buildings.clay-pit")
+--require("prototypes.buildings.clay-pit")
 require("prototypes.buildings.compost-bin")
 require("prototypes.buildings.chemical-furnace")
 
