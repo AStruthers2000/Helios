@@ -13,6 +13,14 @@
             {
                 type = "unlock-recipe",
                 recipe = "wood-processing"
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "latex-growing",
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "rubber-seed-from-biomass"
             }
         },
         prerequisites = { "logistic-science-pack" },

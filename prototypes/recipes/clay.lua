@@ -13,7 +13,7 @@
         allow_decomposition = false,
         ingredients = {
             { type = "item",  name = "stone", amount = 1 },
-            { type = "fluid", name = "steam", amount = 50 }
+            { type = "fluid", name = "steam", amount = 50, fluidbox_index = 1 }
         },
         results = {
             { type = "item", name = "clay", amount = 1 }

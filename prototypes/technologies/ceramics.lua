@@ -8,7 +8,7 @@
         {
             {
                 type = "unlock-recipe",
-                recipe = "clay-pit"
+                recipe = "chemical-smelter"
             },
             {
                 type = "unlock-recipe",

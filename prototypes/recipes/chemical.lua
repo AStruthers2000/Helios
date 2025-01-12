@@ -9,13 +9,13 @@
         allow_decomposition = false,
         ingredients = {
             { type = "item",  name = "raw-latex", amount = 10 },
-            { type = "item",  name = "stone",     amount = 5 },
-            { type = "fluid", name = "steam",     amount = 50 }
+            { type = "item",  name = "coal",     amount = 5 },
+            { type = "fluid", name = "steam",     amount = 50, fluidbox_index = 1 }
         },
         results = {
             { type = "item", name = "rubber", amount = 1 },
         },
-        energy_required = 10,
+        energy_required = 5,
         main_product = "rubber"
     },
 })

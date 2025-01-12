@@ -25,6 +25,8 @@ require("prototypes.buildings.clay-pit")
 require("prototypes.buildings.compost-bin")
 require("prototypes.buildings.chemical-furnace")
 
+require("prototypes.trees.plants")
+
 require("prototypes.technologies.agriculture")
 require("prototypes.technologies.glassworks")
 require("prototypes.technologies.metalworking")

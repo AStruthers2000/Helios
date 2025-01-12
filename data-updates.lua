@@ -64,4 +64,50 @@ end
 
 data.raw.character.character.crafting_categories = {"crafting", "pressing", "recycling-or-hand-crafting", "organic-or-hand-crafting", "organic-or-assembling"}
 
+--table.insert(data.raw.plant["tree-plant"].minable.results, {type = "item", name = "sap", probability = 0.5, amount_min = 1, amount_max = 4})
 
+--literally copying the properties from space-age/prototypes/entities/plants, but copying tree-01 instead of tree-08
+local util = require('util')
+
+local seconds = 60
+local minutes = 60*seconds
+
+local plant_flags = {"placeable-neutral", "placeable-off-grid", "breaths-air"}
+
+local changed_tree = util.table.deepcopy(data.raw.tree["tree-01"])
+changed_tree.type = "plant"
+changed_tree.name = "tree-plant"
+changed_tree.flags = plant_flags
+changed_tree.hidden_in_factoriopedia = false
+changed_tree.factoriopedia_alternative = nil
+changed_tree.map_color = {0.19, 0.39, 0.19, 0.40}
+changed_tree.agricultural_tower_tint =
+{
+    primary = { r = 0.7, g = 1.0, b = 0.2, a = 1 },
+    secondary = { r = 0.561, g = 0.613, b = 0.308, a = 1.000 }, -- #8f4f4eff
+}
+changed_tree.minable =
+{
+    mining_particle = "wooden-particle",
+    mining_time = 0.5,
+    results = {
+        { type = "item", name = "wood", amount = 4 },
+        { type = "item", name = "sap",  probability = 0.5, amount_min = 1, amount_max = 4 }
+    },
+}
+changed_tree.variation_weights = { 1, 1, 1, 1, 1, 1, 1, 1, 0.3, 0.3, 0.0, 0.0}
+changed_tree.growth_ticks = 10 * minutes
+changed_tree.surface_conditions = { {property = "pressure", min = 1000, max = 1000}}  -- only Nauvis (doesn't work yet)
+changed_tree.autoplace =
+{
+    probability_expression = 0,
+    -- required to show agricultural tower plots
+    tile_restriction =
+    {
+        "grass-1", "grass-2", "grass-3", "grass-4",
+        "dry-dirt", "dirt-1", "dirt-2", "dirt-3", "dirt-4", "dirt-5", "dirt-6", "dirt-7",
+        "red-desert-0", "red-desert-1", "red-desert-2", "red-desert-3"
+    }
+}
+data.raw["plant"]["tree-plant"] = changed_tree
+data.raw["recipe"]["wood-processing"].category = "composting"

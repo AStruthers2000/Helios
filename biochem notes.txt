@@ -1,4 +1,4 @@
-chemical plant: rubber + wastewater -> fluid latex + acetic acid + water
+chemical plant: rubber + wastewater -> fluid latex + acetic acid
 chemical plant: fluid latex -> raw latex + steam
 chemical plant: acetic acid -> ethanol + oxygen
 chemical plant: ethanol + carbon dioxide -> biomass + water + oxygen
@@ -8,4 +8,4 @@ chemical plant: oxygen -> air capture device (like from krastorio)
 
 
 bad rubber:
-furnace: rubber -> raw latex + steam + stone
+furnace: rubber -> raw latex + steam + coal
