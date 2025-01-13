@@ -60,7 +60,7 @@ data.raw.recipe["underground-belt"].ingredients = {
 data.raw.recipe["splitter"].ingredients = {
     { type = "item", name = "iron-plate",         amount = 5 },
     { type = "item", name = "electronic-circuit", amount = 5 },
-    { type = "item", name = "transport-belt",      amount = 4 },
+    { type = "item", name = "transport-belt",     amount = 4 },
     { type = "item", name = "rivet",              amount = 5 },
     { type = "item", name = "ball-bearing",       amount = 1 },
     { type = "item", name = "spring",             amount = 2 },

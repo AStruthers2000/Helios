@@ -4,9 +4,9 @@ glass:
 	chemical plant
 
 rivets:
-	- iron chest
-	- transport belt
-	- underground belt
+	iron chest
+	transport belt
+	underground belt
 	splitter
 	burner mining drill
 	electric mining drill
@@ -18,17 +18,18 @@ rivets:
 	pipe
 	pipe-to-ground
 	compost bin
+	lab
 	light armor
 	assembling machine
 	gun turret
 	lamp
-	pump
+	
 	flare stack
 	storage tank
 	steel furnace
 	pumpjack
 	oil refinery
-	chemical plant
+	chemial plant
 
 ball bearing:
 	inserter
@@ -77,7 +78,7 @@ scaffolding:
 rubber gasket:
 	flare stack
 	storage tank
-	pump
+	rubber gasket
 	pumpjack
 	oil refinery
 	chemical plant

@@ -84,15 +84,46 @@ chemical_smelter_entity.graphics_set = {
     animation = {
         layers = {
             {
-                filename = "__helios__/graphics/entity/pchamber1.png",      -- Replace with your mod folder path
-                width = 384,                                                -- 3072 / 8 (columns)
-                height = 384,                                               -- 3072 / 8 (rows)
-                frame_count = 64,
-                line_length = 8,                                            -- Number of columns
-                animation_speed = 1 / chemical_smelter_entity.crafting_speed, -- Adjust speed as needed
-                shift = util.by_pixel(5, 0),                                -- Adjust for proper alignment
-                scale = 0.275,                                               -- Downscales the large texture to fit the 3x3 size
+                filename = "__helios__/graphics/entity/pchamber-idle.png",
+                priority = "low",
+                width = 384,
+                height = 384,
+                frame_count = 1,
+                shift = util.by_pixel(5, 0),
+                scale = 0.275,
             }
+        }
+    },
+
+    working_visualisations = {
+        {
+            animation = {
+                filename = "__helios__/graphics/entity/pchamber1.png", -- Replace with your mod folder path
+                width = 384,                                           -- 3072 / 8 (columns)
+                height = 384,                                          -- 3072 / 8 (rows)
+                priority = "extra-high",
+                frame_count = 64,
+                line_length = 8,                                              -- Number of columns
+                animation_speed = 1 / chemical_smelter_entity.crafting_speed, -- Adjust speed as needed
+                shift = util.by_pixel(5, 0),                                  -- Adjust for proper alignment
+                scale = 0.275,
+            }                                                                 -- Downscales the large texture to fit the 3x3 size
+        }
+    }
+}
+
+
+chemical_smelter_entity.graphics_set.working_visualisations.animation = {
+    layers = {
+        {
+            filename = "__helios__/graphics/entity/pchamber1.png",                -- Replace with your mod folder path
+            width = 384,                                                          -- 3072 / 8 (columns)
+            height = 384,                                                         -- 3072 / 8 (rows)
+            frame_count = 64,
+            line_length = 8,                                                      -- Number of columns
+            animation_speed = 1 / chemical_smelter_entity.crafting_speed,         -- Adjust speed as needed
+            shift = util.by_pixel(5, 0),                                          -- Adjust for proper alignment
+            scale = 0.275,                                                        -- Downscales the large texture to fit the 3x3 size
         }
     }
 }
