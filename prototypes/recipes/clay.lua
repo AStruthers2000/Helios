@@ -2,7 +2,7 @@
     {
         type = "recipe",
         name = "clay",
-        category = "clay",
+        category = "chemical-smelting",
         --subgroup = "vulcanus-processes",
         --order = "b[casting]-s[spring]",
         icon = "__helios__/graphics/icons/items/clay.png",

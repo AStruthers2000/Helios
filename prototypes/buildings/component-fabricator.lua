@@ -31,16 +31,16 @@ data:extend({
         icon_size = 64,
         icon_mipmaps = 4,
         flags = { "placeable-neutral", "placeable-player", "player-creation" },
-        minable = { mining_time = 0.5, result = "component-fabricator" },
-        max_health = 240,
+        minable = { mining_time = 0.2, result = "component-fabricator" },
+        max_health = 200,
         corpse = "assembling-machine-1-remnants",
         dying_explosion = "assembling-machine-1-explosion",
 
-        effect_receiver = {
+        --[[effect_receiver = {
             base_effect = {
-                productivity = 1,
+                productivity = 0.5,
             }
-        },
+        },]]--
 
         scale_entity_info_icon = true,
         resistances =
@@ -50,10 +50,12 @@ data:extend({
                 percent = 40
             }
         },
-        collision_box = { { -1.4, -1.4 }, { 1.4, 1.4 } },
-        selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
+        --collision_box = { { -1.4, -1.4 }, { 1.4, 1.4 } },
+        collision_box = { { -0.9, -0.9 }, { 0.9, 0.9 } },
+        --selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
+        selection_box = { { -1, -1 }, { 1, 1 } },
         --damaged_trigger_effect = hit_effects.entity(),
-        fast_replaceable_group = "assembling-machine",
+        --fast_replaceable_group = "assembling-machine",
         alert_icon_shift = util.by_pixel(-3, -12),
 
         graphics_set =
@@ -120,7 +122,7 @@ data:extend({
                         frame_count = 18,
                         line_length = 9,
                         shift = util.by_pixel(0, -16),
-                        scale = 0.55,
+                        scale = 0.355,
                     },
                     {
                         filename = "__helios__/graphics/entity/component-fabricator-shadow.png",
@@ -130,8 +132,8 @@ data:extend({
                         frame_count = 18,
                         line_length = 9,
                         draw_as_shadow = true,
-                        shift = util.by_pixel(39, 13),
-                        scale = 0.55,
+                        shift = util.by_pixel(26, 4),
+                        scale = 0.355,
                     }
                 }
             },

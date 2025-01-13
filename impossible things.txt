@@ -1,0 +1,17 @@
+-- iron sticks needs to be enabled by default
+
+rubber recipe needs to be hidden again
+electronic circuits should be put behind a different trigger condition. maybe research. 
+?rubber should be added to electronics?
+spring recipe isn't in game
+maybe put inserters and springs behind 1 research, separate from circuits
+make everything with a circuit require circuits as a prereq (automation, lamp, logistics, radar, electric mining drill, fast inserters
+coke line isn't in game
+rubber tubing isn't in game
+scaffolding isn't in game
+lead plate isn't in the game
+resin isn't in the game
+tempered glass isn't in the game
+biomass recipe slow ah
+compost bins should take 40 iron plates
+intermediate part building should be added to automation research

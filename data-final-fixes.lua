@@ -4,6 +4,7 @@ require("prototypes.updates.base-technologies")
 require("prototypes.updates.base-recipes")
 
 data.raw["item"]["clay-brick"].icons[1].tint = { r = 125 / 255, g = 71 / 255, b = 49 / 255, a = 1 }
+data.raw.recipe["iron-stick"].enabled = true
 
 
 --[[I really want to use the flare stack from Flare Stack mod by GotLag, but 

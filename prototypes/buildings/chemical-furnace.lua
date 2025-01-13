@@ -4,13 +4,48 @@
 local chemical_smelter_entity = util.table.deepcopy(data.raw["assembling-machine"]["chemical-plant"])
 
 -- Update entity properties
+--chemical_smelter_entity.type = "furnace"
 chemical_smelter_entity.name = "chemical-smelter"
-chemical_smelter_entity.icon = "__helios__/graphics/icons/pchamber1.png"
+chemical_smelter_entity.icon = "__helios__/graphics/icons/echamber1.png"
 chemical_smelter_entity.icon_size = 64
 chemical_smelter_entity.minable.result = "chemical-smelter"
-chemical_smelter_entity.crafting_categories = {"chemical-smelting", "chemistry", "clay"}
+chemical_smelter_entity.crafting_categories = {"chemical-smelting", "clay"}
 chemical_smelter_entity.module_slots = 0
 chemical_smelter_entity.crafting_speed = 0.25
+chemical_smelter_entity.energy_source = {
+    type = "burner",
+    fuel_categories = { "chemical" },
+    effectivity = 1.0,
+    fuel_inventory_size = 1,
+    emissions_per_minute = { pollution = 5 },
+    light_flicker =
+    {
+        color = { 0, 0, 0 },
+        minimum_intensity = 0.6,
+        maximum_intensity = 0.95
+    },
+    smoke = {
+        {
+            name = "smoke",
+            deviation = { 0.1, 0.1 },
+            frequency = 5,
+            position = { -0.75, -1.25 },
+            starting_vertical_speed = 0.08,
+            starting_frame_deviation = 60
+        },
+        {
+            name = "smoke",
+            deviation = { 0.1, 0.1 },
+            frequency = 6,
+            position = { 0.75, -1.25 },
+            starting_vertical_speed = 0.08,
+            starting_frame_deviation = 60
+        }
+    }
+}
+chemical_smelter_entity.energy_usage = "180kW"
+chemical_smelter_entity.result_inventory_size = 1
+chemical_smelter_entity.source_inventory_size = 1
 
 
 -- Keep the 3x3 size
@@ -79,18 +114,19 @@ chemical_smelter_entity.fluid_boxes = {
         },
     },
 }
+
 -- Define custom animation using the sprite sheet
 chemical_smelter_entity.graphics_set = {
     animation = {
         layers = {
             {
-                filename = "__helios__/graphics/entity/pchamber-idle.png",
+                filename = "__helios__/graphics/entity/echamber1-idle.png",
                 priority = "low",
-                width = 384,
-                height = 384,
+                width = 256,
+                height = 256,
                 frame_count = 1,
                 shift = util.by_pixel(5, 0),
-                scale = 0.275,
+                scale = 0.375,
             }
         }
     },
@@ -98,41 +134,26 @@ chemical_smelter_entity.graphics_set = {
     working_visualisations = {
         {
             animation = {
-                filename = "__helios__/graphics/entity/pchamber1.png", -- Replace with your mod folder path
-                width = 384,                                           -- 3072 / 8 (columns)
-                height = 384,                                          -- 3072 / 8 (rows)
+                filename = "__helios__/graphics/entity/echamber1.png", -- Replace with your mod folder path
+                width = 256,                                           -- 3072 / 8 (columns)
+                height = 256,                                          -- 3072 / 8 (rows)
                 priority = "extra-high",
                 frame_count = 64,
                 line_length = 8,                                              -- Number of columns
                 animation_speed = 1 / chemical_smelter_entity.crafting_speed, -- Adjust speed as needed
                 shift = util.by_pixel(5, 0),                                  -- Adjust for proper alignment
-                scale = 0.275,
+                scale = 0.375,
             }                                                                 -- Downscales the large texture to fit the 3x3 size
         }
     }
 }
 
 
-chemical_smelter_entity.graphics_set.working_visualisations.animation = {
-    layers = {
-        {
-            filename = "__helios__/graphics/entity/pchamber1.png",                -- Replace with your mod folder path
-            width = 384,                                                          -- 3072 / 8 (columns)
-            height = 384,                                                         -- 3072 / 8 (rows)
-            frame_count = 64,
-            line_length = 8,                                                      -- Number of columns
-            animation_speed = 1 / chemical_smelter_entity.crafting_speed,         -- Adjust speed as needed
-            shift = util.by_pixel(5, 0),                                          -- Adjust for proper alignment
-            scale = 0.275,                                                        -- Downscales the large texture to fit the 3x3 size
-        }
-    }
-}
-
 -- Define the item for the chemical smelter
 local chemical_smelter_item = {
     type = "item",
     name = "chemical-smelter",
-    icon = "__helios__/graphics/icons/pchamber1.png", -- Replace with your custom icon
+    icon = "__helios__/graphics/icons/echamber1.png", -- Replace with your custom icon
     icon_size = 64,
     subgroup = "production-machine",
     order = "b[chemical-smelter]",
@@ -147,12 +168,12 @@ local chemical_smelter_recipe = {
     energy_required = 5,
     enabled = false,
     ingredients = {
-        { type = "item", name = "glass",               amount = 20 },
+        --{ type = "item", name = "glass",               amount = 20 },
         { type = "item", name = "stone-brick",         amount = 20 },
         { type = "item", name = "pipe",                amount = 20 },
         { type = "item", name = "gear-wheel-assembly", amount = 10 },
         { type = "item", name = "stone-furnace",       amount = 2 },
-        { type = "item", name = "steam-engine",        amount = 2 },
+        { type = "item", name = "boiler",        amount = 2 },
     },
     results = { { type = "item", name = "chemical-smelter", amount = 1 } },
 }

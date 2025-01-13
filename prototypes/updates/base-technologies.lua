@@ -36,3 +36,29 @@ data.raw.technology["electronics"].effects = {
         recipe = "inserter"
     },
 }
+
+data.raw.technology["steel-processing"].effects =
+{
+    {
+        type = "unlock-recipe",
+        recipe = "steel-from-raw"
+    },
+    {
+        type = "unlock-recipe",
+        recipe = "steel-chest"
+    }
+}
+
+data.raw.technology["steel-plate-productivity"].effects =
+{
+    {
+        type = "change-recipe-productivity",
+        recipe = "steel-from-raw",
+        change = 0.1
+    },
+    {
+        type = "change-recipe-productivity",
+        recipe = "casting-steel",
+        change = 0.1
+    }
+}
