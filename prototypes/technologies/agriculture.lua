@@ -49,10 +49,14 @@
             },
             {
                 type = "unlock-recipe",
+                recipe = "resin"
+            },
+            {
+                type = "unlock-recipe",
                 recipe = "sap-compression"
-            }
+            },
         },
-        prerequisites = {"ceramics"},
+        prerequisites = { "ceramics" },
         research_trigger = {
             type = "craft-item",
             item = "biomass",

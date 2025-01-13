@@ -14,5 +14,9 @@
     {
         type = "recipe-category",
         name = "intermediate-component"
+    },
+    {
+        type = "recipe-category",
+        name = "hand-crafting"
     }
 })

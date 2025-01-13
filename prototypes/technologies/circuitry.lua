@@ -1,6 +1,33 @@
 ﻿data:extend({
     {
         type = "technology",
+        name = "inserters",
+        icon = "__base__/graphics/technology/inserter-capacity.png",
+        icon_size = 256,
+        effects =
+        {
+            {
+                type = "unlock-recipe",
+                recipe = "spring"
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "inserter"
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "long-handed-inserter"
+            },
+        },
+        prerequisites = {"electronics"},
+        unit = {
+            count = 20,
+            ingredients = { { "automation-science-pack", 1 } },
+            time = 10
+        }
+    },
+    {
+        type = "technology",
         name = "energy-distribution",
         icon = "__helios__/graphics/technology/electric-energy-distribution.png",
         icon_size = 256,

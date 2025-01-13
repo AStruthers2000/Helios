@@ -26,7 +26,7 @@ data:extend({
     {
         type = "recipe",
         name = "biomass-from-sap",
-        category = "organic-or-hand-crafting",
+        category = "hand-crafting",
         enabled = true,
         allow_productivity = false,
         auto_recycle = false,
@@ -56,7 +56,7 @@ data:extend({
             { type = "item", name = "biomass", amount = 5 },
             { type = "item", name = "sap",     amount = 5 }
         },
-        energy_required = 60,
+        energy_required = 10,
         main_product = "biomass"
     },
     {
@@ -141,7 +141,7 @@ data:extend({
         auto_recycle = false,
         allow_decomposition = false,
         energy_required = 10,
-        ingredients = { { type = "item", name = "sap", amount = 20 } },
+        ingredients = { { type = "item", name = "sap", amount = 10 } },
         results =
         {
             { type = "item", name = "raw-latex", amount = 1 },

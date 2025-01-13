@@ -1,10 +1,28 @@
 ﻿data:extend({
+    { --possibly unusued, i forgot the player can already craft things in the crafting category
+        type = "recipe",
+        name = "scaffolding-from-wood",
+        category = "hand-crafting",
+        enabled = false,
+        allow_productivity = true,
+        allow_decomposition = true,
+        ingredients = {
+            { type = "item", name = "wood",  amount = 20 },
+            { type = "item", name = "rivet", amount = 4 }
+        },
+        results = {
+            { type = "item", name = "scaffolding", amount = 1 },
+        },
+        energy_required = 2,
+        main_product = "scaffolding"
+    },
     {
         type = "recipe",
         name = "scaffolding",
         category = "crafting",
         enabled = false,
         allow_productivity = true,
+        allow_decomposition = true,
         ingredients = {
             { type = "item", name = "steel-plate", amount = 4 },
             { type = "item", name = "rivet",       amount = 4 }

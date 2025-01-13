@@ -8,7 +8,7 @@ data:extend({
         enabled = false,
         ingredients = {
             { type = "item", name = "wood",       amount = 20 },
-            { type = "item", name = "iron-plate", amount = 100 },
+            { type = "item", name = "iron-plate", amount = 40 },
             { type = "item", name = "rivet",      amount = 20 },
             { type = "item", name = "glass",      amount = 20 },
             { type = "item", name = "clay-brick", amount = 50 },
@@ -42,7 +42,7 @@ data:extend({
                 production_type = "input",
                 pipe_picture = require("prototypes.buildings.pipe-picture"),
                 pipe_covers = pipecoverspictures(),
-                volume = 2000,
+                volume = 500,
                 pipe_connections = {
                     { flow_direction = "input-output", direction = defines.direction.north, position = { 0, -3 } },
                     { flow_direction = "input-output", direction = defines.direction.west,  position = { -3, 0 } },

@@ -71,7 +71,7 @@ end
 
 --table.insert(data.raw["character"]["character"].crafting_categories, "intermediate-component")
 
-data.raw.character.character.crafting_categories = {"crafting", "electronics", "pressing", "recycling-or-hand-crafting", "organic-or-hand-crafting", "organic-or-assembling", "intermediate-component"}
+data.raw.character.character.crafting_categories = {"hand-crafting", "crafting", "electronics", "pressing", "recycling-or-hand-crafting", "organic-or-hand-crafting", "organic-or-assembling", "intermediate-component"}
 
 --table.insert(data.raw.plant["tree-plant"].minable.results, {type = "item", name = "sap", probability = 0.5, amount_min = 1, amount_max = 4})
 
