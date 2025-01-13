@@ -37,6 +37,10 @@ data.raw.recipe["electronic-circuit"].ingredients = {
     { type = "item", name = "solder",                      amount = 2 }
 }
 
+data.raw.recipe["copper-cable"].category = "intermediate-component"
+data.raw.recipe["iron-stick"].category = "intermediate-component"
+data.raw.recipe["iron-gear-wheel"].category = "intermediate-component"
+
 
 ---------------------------------------- Buildings ----------------------------------------
 data.raw.recipe["offshore-pump"].ingredients = {
@@ -155,7 +159,7 @@ data.raw.recipe["assembling-machine-1"].ingredients = {
     { type = "item", name = "electronic-circuit",  amount = 3 },
     { type = "item", name = "rivet",               amount = 9 },
     { type = "item", name = "ball-bearing",        amount = 4 },
-    { type = "item", name = "scaffolding",         amount = 2 },
+    --{ type = "item", name = "scaffolding",         amount = 2 },
 }
 data.raw.recipe["gun-turret"].ingredients = {
     { type = "item", name = "iron-plate",          amount = 20 },

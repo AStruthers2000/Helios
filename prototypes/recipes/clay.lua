@@ -43,7 +43,7 @@
     {
         type = "recipe",
         name = "ceramic-casing",
-        category = "crafting",
+        category = "intermediate-component",
         icon = "__helios__/graphics/icons/items/ceramic.png",
         icon_size = 64,
         enabled = false,

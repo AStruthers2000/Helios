@@ -10,5 +10,9 @@
     {
         type = "recipe-category",
         name = "chemical-smelting"
+    },
+    {
+        type = "recipe-category",
+        name = "intermediate-component"
     }
 })

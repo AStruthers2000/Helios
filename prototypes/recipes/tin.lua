@@ -53,7 +53,7 @@
     {
         type = "recipe",
         name = "tin-gear-wheel",
-        category = "crafting",
+        category = "intermediate-component",
         enabled = true,
         allow_productivity = true,
         auto_recycle = false,
@@ -70,7 +70,7 @@
     {
         type = "recipe",
         name = "gear-wheel-assembly",
-        category = "crafting",
+        category = "intermediate-component",
         enabled = true,
         allow_productivity = true,
         auto_recycle = false,

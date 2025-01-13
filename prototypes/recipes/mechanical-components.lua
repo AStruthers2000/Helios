@@ -18,7 +18,7 @@
     {
         type = "recipe",
         name = "rivet",
-        category = "crafting",
+        category = "intermediate-component",
         enabled = true,
         allow_productivity = true,
         allow_decomposition = true,
@@ -35,7 +35,7 @@
     {
         type = "recipe",
         name = "ball-bearing",
-        category = "crafting",
+        category = "intermediate-component",
         enabled = false,
         allow_productivity = true,
         auto_recycle = false,
@@ -88,7 +88,7 @@
     {
         type = "recipe",
         name = "spring",
-        category = "crafting",
+        category = "intermediate-component",
         enabled = false,
         allow_productivity = true,
         auto_recycle = false,
@@ -105,7 +105,7 @@
     {
         type = "recipe",
         name = "cladding",
-        category = "crafting",
+        category = "intermediate-component",
         enabled = false,
         allow_productivity = true,
         auto_recycle = false,

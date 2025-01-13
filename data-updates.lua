@@ -60,9 +60,15 @@ local bioprocessingMachines = {"biochamber"}
 for _, machine in pairs(bioprocessingMachines) do
     table.insert(data.raw["assembling-machine"][machine].crafting_categories, "composting")
 end
---table.insert(data.raw["character"]["character"].crafting_categories, "bioprocessing")
 
-data.raw.character.character.crafting_categories = {"crafting", "pressing", "recycling-or-hand-crafting", "organic-or-hand-crafting", "organic-or-assembling"}
+local intermediateMachines = {"assembling-machine-1", "assembling-machine-2", "assembling-machine-3"}
+for _, machine in pairs(intermediateMachines) do
+    table.insert(data.raw["assembling-machine"][machine].crafting_categories, "intermediate-component")
+end
+
+--table.insert(data.raw["character"]["character"].crafting_categories, "intermediate-component")
+
+data.raw.character.character.crafting_categories = {"crafting", "electronics", "pressing", "recycling-or-hand-crafting", "organic-or-hand-crafting", "organic-or-assembling", "intermediate-component"}
 
 --table.insert(data.raw.plant["tree-plant"].minable.results, {type = "item", name = "sap", probability = 0.5, amount_min = 1, amount_max = 4})
 

@@ -28,6 +28,7 @@ require("prototypes.recipes.mechanical-components")
 --require("prototypes.buildings.clay-pit")
 require("prototypes.buildings.compost-bin")
 require("prototypes.buildings.chemical-furnace")
+require("prototypes.buildings.component-fabricator")
 
 require("prototypes.trees.plants")
 
