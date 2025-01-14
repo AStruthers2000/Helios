@@ -93,6 +93,23 @@ data.raw.technology["automation"].effects =
 
 data.raw.technology["steel-processing"].effects =
 {
+    { ---hmmm probably not here...
+        type = "unlock-recipe",
+        recipe = "limestone-precipitation"
+    },
+    { ---hmmm probably not here...
+        type = "unlock-recipe",
+        recipe = "limestone-recrystalization"
+    },
+    { ---hmmm probably not here...
+        type = "unlock-recipe",
+        recipe = "calcium-carbonate"
+    },
+    { ---hmmm probably not here...
+        type = "unlock-recipe",
+        recipe = "seashells"
+    },
+
     {
         type = "unlock-recipe",
         recipe = "quicklime"

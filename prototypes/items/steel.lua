@@ -55,6 +55,63 @@ data:extend({
         weight = 2 * kg
     },
     {
+        type = "item",
+        name = "calcium-carbonate",
+        icon = "__helios__/graphics/icons/items/pile-calcium-carbonate-1.png",
+        pictures =
+        {
+            { size = 64, filename = "__helios__/graphics/icons/items/pile-calcium-carbonate-1.png", scale = 0.5, mipmap_count = 4, },
+            { size = 64, filename = "__helios__/graphics/icons/items/pile-calcium-carbonate-2.png", scale = 0.5, mipmap_count = 4, },
+            { size = 64, filename = "__helios__/graphics/icons/items/pile-calcium-carbonate-3.png", scale = 0.5, mipmap_count = 4, },
+        },
+        icon_size = 64,
+        subgroup = "raw-resource",
+        order = "d[calcium-carbonate]",
+        inventory_move_sound = item_sounds.resource_inventory_move,
+        pick_sound = item_sounds.resource_inventory_pickup,
+        drop_sound = item_sounds.resource_inventory_move,
+        stack_size = 100,
+        weight = 2 * kg
+    },
+    {
+        type = "item",
+        name = "seashell",
+        icon = "__helios__/graphics/icons/items/organic-seashell-1.png",
+        pictures =
+        {
+            { size = 64, filename = "__helios__/graphics/icons/items/organic-seashell-1.png", scale = 0.5, mipmap_count = 4, },
+            { size = 64, filename = "__helios__/graphics/icons/items/organic-seashell-1.png", scale = 0.5, mipmap_count = 4, },
+            { size = 64, filename = "__helios__/graphics/icons/items/organic-seashell-1.png", scale = 0.5, mipmap_count = 4, },
+        },
+        icon_size = 64,
+        subgroup = "raw-resource",
+        order = "d[seashell]",
+        inventory_move_sound = item_sounds.resource_inventory_move,
+        pick_sound = item_sounds.resource_inventory_pickup,
+        drop_sound = item_sounds.resource_inventory_move,
+        stack_size = 100,
+        weight = 2 * kg
+    },
+    {
+        type = "item",
+        name = "salt",
+        icon = "__helios__/graphics/icons/items/pile-dust-salt-1.png",
+        pictures =
+        {
+            { size = 64, filename = "__helios__/graphics/icons/items/pile-dust-salt-1.png", scale = 0.5, mipmap_count = 4, },
+            { size = 64, filename = "__helios__/graphics/icons/items/pile-dust-salt-1.png", scale = 0.5, mipmap_count = 4, },
+            { size = 64, filename = "__helios__/graphics/icons/items/pile-dust-salt-1.png", scale = 0.5, mipmap_count = 4, },
+        },
+        icon_size = 64,
+        subgroup = "raw-resource",
+        order = "d[salt]",
+        inventory_move_sound = item_sounds.resource_inventory_move,
+        pick_sound = item_sounds.resource_inventory_pickup,
+        drop_sound = item_sounds.resource_inventory_move,
+        stack_size = 100,
+        weight = 2 * kg
+    },
+    {
         type = "fluid",
         name = "carbon-dioxide",
         icon = "__helios__/graphics/icons/fluids/molecule-carbon-dioxide.png",
